@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="restaurant.apps.falcons.flaconsrestaurant">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission  android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+        android:usesCleartextTraffic="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        <activity android:name=".activities.LoginActivity"
+            android:exported="true"
+                  android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".util.StartServiceOnBoot"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".util.DismissNotification"/>
+
+        <service
+                android:name=".util.MyService"
+                android:enabled="true"/>
+
+        <activity android:name=".activities.InvoiceActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activities.TablesActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activities.ReviewsActivity" android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:name=".activities.SettingsActivity"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activities.MainActivity"/>
+    </application>
+
+</manifest>

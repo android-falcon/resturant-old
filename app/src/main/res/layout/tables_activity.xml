@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/edit_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/edit_title"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/section_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/edit_switch"
+            android:text="@string/section"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/section_value"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/section_title"
+            android:background="@drawable/card_background_red"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/card_background_red"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/home"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/home"
+            android:background="@drawable/card_background_black"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+<!--    <ScrollView-->
+
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:fillViewport="true">-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/tables_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/top_layout"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="12dp" />-->
+<!--    </ScrollView>-->
+
+<!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/tables_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:orientation="horizontal"
+        android:padding="12dp" />
+
+</RelativeLayout>

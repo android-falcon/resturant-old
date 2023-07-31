@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:padding="16dp"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <EditText
+            android:id="@+id/first_part"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/black"
+            android:maxLength="3"
+            android:lines="1"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:gravity="center"
+            android:background="@drawable/rectangle_with_border"/>
+
+    <ImageView
+            android:id="@+id/third_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dot"
+            android:layout_marginRight="8dp"/>
+
+    <EditText
+            android:id="@+id/second_part"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:maxLength="3"
+            android:lines="1"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:imeOptions="actionNext"
+            android:gravity="center"
+            android:background="@drawable/rectangle_with_border"/>
+
+    <ImageView
+            android:id="@+id/second_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dot"
+            android:layout_marginRight="8dp"/>
+
+    <EditText
+            android:id="@+id/third_part"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:maxLength="3"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:imeOptions="actionNext"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/rectangle_with_border"/>
+
+    <ImageView
+            android:id="@+id/first_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dot"
+            android:layout_marginRight="8dp"/>
+
+    <EditText
+            android:id="@+id/fourth_part"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:maxLength="3"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textSize="22sp"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:background="@drawable/rectangle_with_border"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "993382000817",
+    "firebase_url": "https://captin-resturant-default-rtdb.firebaseio.com",
+    "project_id": "captin-resturant",
+    "storage_bucket": "captin-resturant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993382000817:android:136e0aaaa7e8ba866fda90",
+        "android_client_info": {
+          "package_name": "com.falconssoft.menucaptaincall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993382000817-uk93mhmonblqchielc7me87cf3maapnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnb_kbqGyMU9rQiqqRQpg7UOOVoeLNc80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993382000817-uk93mhmonblqchielc7me87cf3maapnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993382000817:android:ce91076dfd2b0d526fda90",
+        "android_client_info": {
+          "package_name": "restaurant.apps.falcons.flaconsrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993382000817-uk93mhmonblqchielc7me87cf3maapnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnb_kbqGyMU9rQiqqRQpg7UOOVoeLNc80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993382000817-uk93mhmonblqchielc7me87cf3maapnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
